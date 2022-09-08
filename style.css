@@ -1,6 +1,5 @@
-
-class.image {
-    position: absolute;
-    rbackground-repeat: repeat;
-    background-attachment: fixed;
+body{
+    background-image: url(img/bel.uzori.jpg);
+    background-repeat: repeat-y;
 }
+
