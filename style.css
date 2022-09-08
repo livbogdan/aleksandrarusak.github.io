@@ -1,5 +1,6 @@
-<style>
-body {
-    
+
+class.image {
+    position: absolute;
+    rbackground-repeat: repeat;
+    background-attachment: fixed;
 }
-</style>
