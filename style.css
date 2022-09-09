@@ -16,6 +16,14 @@ body{
    margin-right: 5px;
 }
 
+.home-button:hover{
+    opacity: 0,1;
+}
+
+.home-button:active{
+    opacity: 0,5;
+}
+
 .interes-button{
     background-color: yellow;
     color: black;
@@ -65,5 +73,5 @@ body{
 }
 
 .footer{
-    
+
 }
