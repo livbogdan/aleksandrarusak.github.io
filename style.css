@@ -2,6 +2,50 @@ body{
     background-image: url(img/background.jpg);
     background-repeat: repeat-y;
     padding: 30px;
+    width: 100%;
+}
+
+.home-button{
+   background-color: rgb(9, 195, 9);
+   color: black;
+   border: none;
+   height: 36px;
+   width: 100px;
+   border-radius: 5px;
+   cursor: pointer;
+   margin-right: 5px;
+}
+
+.interes-button{
+    background-color: yellow;
+    color: black;
+    border: none;
+    height: 36px;
+    width: 100px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.video-button{
+    background-color: orange;
+    color: black;
+    border: none;
+    height: 36px;
+    width: 100px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.valet-button{
+    background-color:rgba(236, 31, 31, 0.927);
+    color: black;
+    border: none;
+    height: 36px;
+    width: 100px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-right: 5px;
 }
 
 .header{
@@ -13,3 +57,13 @@ body{
     margin: 0 auto;
     background-color: white;
   }
+
+  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer{
+    
+}
