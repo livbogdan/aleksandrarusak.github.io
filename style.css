@@ -1,66 +1,53 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     background-image: url(img/background.jpg);
     background-repeat: repeat-y;
+    padding: 0px;
+}
+
+p {
+    font-family: Arial;
+    font-size: 20px;
+    line-height: 1.6em;
+}
+
+.nav{
     padding: 30px;
     width: 100%;
 }
 
-.home-button{
-   background-color: rgb(9, 195, 9);
-   color: black;
-   border: none;
-   height: 36px;
-   width: 100px;
-   border-radius: 5px;
-   cursor: pointer;
-   margin-right: 5px;
-}
-
-.home-button:hover{
-    opacity: 0,1;
-}
-
-.home-button:active{
-    opacity: 0,5;
-}
-
-.interes-button{
-    background-color: yellow;
-    color: black;
+.btn-group .button {
+    background-color: #4CAF50; /* Green */
     border: none;
-    height: 36px;
-    width: 100px;
-    border-radius: 8px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
     cursor: pointer;
-    margin-right: 5px;
-}
-.video-button{
-    background-color: orange;
-    color: black;
-    border: none;
-    height: 36px;
-    width: 100px;
-    border-radius: 12px;
-    cursor: pointer;
-    margin-right: 5px;
-}
-
-.valet-button{
-    background-color:rgba(236, 31, 31, 0.927);
-    color: black;
-    border: none;
-    height: 36px;
-    width: 100px;
-    border-radius: 15px;
-    cursor: pointer;
-    margin-right: 5px;
-}
+   
+  }
+  
+  .btn-group .button:hover {
+    background-color: #3e8e41;
+  }
 
 .header{
     margin: 0 auto;
+    text-align: center;
+    padding-left: 16px;
+    padding-right: 10px;
 }
+
   .container {
     width: 800px;
+    height: auto;
     border: 5px solid white;
     margin: 0 auto;
     background-color: white;
@@ -70,8 +57,36 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.upward{
+    position: fixed;
+    bottom: 700px;
+    right: 40px;
+    width: 70px;
+    height: 70px;
+    background: url(img/upp.JPG);
+    background-size: cover;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: o;
+    transition: 0,5s;
+}
+
+.upward.active{
+    bottom: 40px;
+    visibility: visible;
+    opacity: 1;
 }
 
 .footer{
-
+    text-align: center;
+    color: black;
+    font-size: 10px;
+    background-color: green;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: auto; 
 }
