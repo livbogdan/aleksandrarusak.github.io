@@ -17,7 +17,8 @@ body{
 }
 
 .nav{
-    width: 100%;
+    display: block;
+    list-style-type: none;
     text-align: center;
 }
 
@@ -90,4 +91,5 @@ body{
     color: black;
     font-size: 16px;
     background-color: green; 
+    width: 100%;
 }
