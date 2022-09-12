@@ -18,8 +18,8 @@ body{
 
 .nav{
     display: block;
-    list-style-type: none;
-    text-align: center;
+    text-align: left;
+    margin-left: 350px;
 }
 
 .buttons {
@@ -42,6 +42,38 @@ body{
     background-color: #138217;
     color: black;
   }
+
+label{
+    position: absolute;
+    width: 48px;
+    height: 25px;
+    right: 20px;
+    top: 2px;
+    border: 2px solid green;
+    border-radius: 20px;
+}
+
+label:before{
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 20px;
+    left: 1px;
+    top: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #045607;
+    transition: 0.4s;
+}
+
+label.active:before{
+    left: 20px;
+    background-color:  #c1e9c2;
+}
+
+body.night{
+    background-color: #045607;
+}
 
 .header{
     margin: 0 auto;

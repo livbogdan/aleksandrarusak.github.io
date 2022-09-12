@@ -10,16 +10,18 @@
   <body> 
     <div class="upward" onclick="scrollTopTop()">  
     </div>
-
+        <header>
+            <label id="dark-change"></label>
+        </header>
           <div class="buttons">
             <a href="index.html">Home</a> 
             <a href="interesting fact.html" target="_blank">Interesting fact</a> 
             <a href="https://www.youtube.com/watch?v=owtYaCekIeA"  target="_blank">Video</a> 
             <a href="Valet2020.html" target="_blank">Valet 2020</a> 
           </div><br>
-          <input class="search-bar" type="text" placeholder="Search">
-          <br>
+
             <div class="container">
+              <br>
               <h1>Belarus</h1> 
               <br>
               <hr>
@@ -35,9 +37,9 @@
          <h2>Administrativ indelning</h2>
          <br>
          <p>Belarus är indelat i sex regioner (län):</p>
-
+             <br>
             <div class="nav">
-              <ul>
+              <ol>
                 <li>
                    <a href="brest.html"  target="_blank"><b>Brest</b> <i>region</i></a>
                 </li>
@@ -56,7 +58,7 @@
                 <li>
                   <a href="minsk.html"  target="_blank"><b>Minsk</b> <i>region</i></a> 
                 </li>
-              </ul>
+              </ol>
             </div><br>
          <div class="image">
            <img src="img/map.jpg" width="600" height="500">
@@ -89,7 +91,14 @@
               }
             </script>
 
-
+            <script>
+              var content = document.getElementsByTagName('body')[0];
+              var darkMode = document.getElementById('dark-change');
+              darkMode.addEventListener('click', function(){
+                darkMode.classList.toggle('active');
+                content.classList.toggle('night');
+              })
+            </script>
 
   </body> 
 </html>
