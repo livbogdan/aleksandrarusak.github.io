@@ -9,17 +9,25 @@ body{
     background-color: #c1e9c2;
     background-repeat: repeat-y;
     padding: 0px;
-    max-width: 100%; 
+    max-width: 100%;
     font-family: Arial;
     font-size: 16px;
     line-height: 1.6em;
     text-align: center;
 }
 
-.nav{
-    display: block;
-    text-align: left;
-    margin-left: 350px;
+.container .text{
+    text-align: justify;
+    padding: 10px;
+}
+
+.container .region{
+    text-align: center;
+}
+
+.container p{
+    text-align: justify;
+    padding: 10px;
 }
 
 .buttons {
@@ -84,7 +92,7 @@ body.night{
 
   .container {
     display: block;
-    width: 800px;
+    width: 80%;
     height: auto;
     border: 5px solid white;
     margin: 0 auto;
@@ -92,11 +100,16 @@ body.night{
     text-align: center;
   }
 
-  .imgage {
+  .container img{
+    width: 70%;
+  }
+
+  .container .nav li{
+    text-align: center;
     display: block;
-    margin-left: auto;
-    margin-right: auto; 
-}
+    list-style: none;
+    
+  }
 
 .upward{
     position: fixed;
