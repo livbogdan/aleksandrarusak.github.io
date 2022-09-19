@@ -76,28 +76,9 @@
 
       </div>
 
-            <script>
-              window.addEventListener('scroll', function(){
-              var scroll = document.querySelector('.upward');
-              scroll.classList.toggle("active", window.scrollY>500)
-               })
-                
-               function scrollTopTop(){
-                window.scrollTo({
-                top: 0,
-                behavior:"smooth"
-               })
-              }
-            </script>
+            <script src="scroll.js"></script>
 
-            <script>
-              var content = document.getElementsByTagName('body')[0];
-              var darkMode = document.getElementById('dark-change');
-              darkMode.addEventListener('click', function(){
-                darkMode.classList.toggle('active');
-                content.classList.toggle('night');
-              })
-            </script>
+            <script src="dark.js"></script>
 
   </body> 
 </html>
