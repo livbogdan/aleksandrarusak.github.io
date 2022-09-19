@@ -5,17 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt</title>
+    <style>
+      body{
+         background-color: #c7ebcc;
+         color: black;
+         display: block;
+         text-align: center;
+      }
+      .container{
+         display: block;
+         width: 60%;
+         height: auto;
+         margin: 0 auto;
+         background-color: white;
+         text-align: center;
+      }
+   
+    </style>
 </head>
    <body>
-     <h1>Skriv in din e-postadress så kontaktar vi dig så snart som möjligt</h1>
-     <form action="/action_page.php">
+    <div class="container">
+     <h3>Skriv in din e-postadress så kontaktar vi dig så snart som möjligt</h1>
+     <form action="submit.html">
         <label for="fname">Förnamn:</label>
-        <input type="text" id="fname" name="fname"><br><br>
+        <input type="text" id="fname" name="fname"required><br><br>
         <label for="lname">Efternamn:</label>
-        <input type="text" id="lname" name="lname"><br><br>
+        <input type="text" id="lname" name="lname"required><br><br>
         <label for="email">email:</label>
-        <input type="email" id="email" name="email">
+        <input type="email" id="email" name="email"required>
+        <br><br>
         <input type="submit" value="Submit">
       </form>
+    </div>
    </body>
 </html>
