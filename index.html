@@ -1,19 +1,20 @@
-<!DOCTYPE html> 
+<!DOCTYPE html> <!--Anger att koden och sidan är ett HTML-dokument-->
 <html lang="sv"> 
-<head> 
-<meta charset="UTF-8"> 
+<head> <!--"Osynlig" information som används för att ge information till webbläsaren, sökmotorer mm. Inget som skrivs här syns för demn som ska läsa dina sidor.--> 
+<meta charset="UTF-8"> <!-- Meta taggen är inte synlig på hemsidan men den innehåller information om informationen på hemsidan. Den svenska språket innehåller som känt är ÅÄÖ och för att dessa skall visas upp på ett rätt sätt så anger man UTF-8 som teckenuppsättning. -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-<title>Belarus</title> 
-<link rel="stylesheet" href="style.css"> 
+<title>Belarus</title> <!-- Sidans titel -->
+<link rel="stylesheet" href="style.css"> <!-- För att länka samman ditt HTML-dokument med andra typer av dokument så skall du använda <link>-taggen. -->
+<link rel="stylesheet" href="img.css">
 </head> 
-  <body> 
-    <div class="upward" onclick="scrollTopTop()">  
+  <body> <!-- Allt som skrivs i BODY syns i webbläsaren, det är alltså sidans kropp. -->
+    <div class="upward" onclick="scrollTopTop()">  <!--  -->
     </div>
-        <header>
-            <label id="dark-change"></label>
+        <header> <!--  -->
+            <label id="dark-change"></label> <!--  -->
         </header>
-          <div class="buttons">
+          <div class="buttons"> <!--  -->
             <a href="index.html">Home</a> 
             <a href="interesting fact.html" target="_blank">Interesting fact</a> 
             <a href="https://www.youtube.com/watch?v=owtYaCekIeA"  target="_blank">Video</a> 
@@ -22,12 +23,42 @@
             <a href="quiz.html" target="_blank">Quiz</a>
           </div><br>
 
+             <!-- Slideshow container -->
+             <div class="slideshow-container">
+
+              <!-- Full-width images with number and caption text -->
+              <div class="mySlides fade">
+              <img src="img/img4.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides fade">
+              <img src="img/img5.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides fade">
+              <img src="img/img6.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides fade">
+              <img src="img/img7.jpg" style="width:100%">
+              </div>
+
+              <!-- The dots/circles -->
+              <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span> 
+              </div>
+              <br>
+
             <div class="container">
+              <br> <!--  -->
+              <h1>Belarus</h1> <!--rubriker(heading) som finns i fasta storlekar h1-h6-->
               <br>
-              <h1>Belarus</h1> 
+              <hr><!--  -->
               <br>
-              <hr>
-              <br>
+              <!--<P> När du vill dela upp texten i olika stycken används märket<P> -->
               <p class="text">Belarus, traditionellt Vitryssland, formellt Republiken Belarus, är ett land i Östeuropa. Landet är en inlandsstat och gränsar till Lettland, Litauen, Polen, Ryssland och Ukraina. Belarus huvudstad är Minsk. Fram till 1991, då Belarus frigjorde sig från det sönderfallande Sovjetunionen och utropade sin självständighet, hette landet Vitryska SSR och var en av Sovjetunionens förbundsrepubliker.</p><br> 
              <div class="image">
                <img src="/img/BELARUS.jpg" title="Belarus is beautiful"> 
@@ -37,9 +68,9 @@
          <br>
          <h3>Snabb fakta</h2>
           <br>
-         <table>
-          <tr>
-            <td>Huvudstad</td>
+         <table><!--  -->
+          <tr><!--  -->
+            <td>Huvudstad</td><!--  -->
             <td>Minsk</td> 
           </tr>
           <tr>
@@ -77,9 +108,9 @@
          <h2>Administrativ indelning</h2>
          <br>
          <p class="region">Belarus är indelat i sex regioner (län):</p>
-            <div class="nav">
-              <ol>
-                <li>
+            <div class="nav"> <!--  -->
+              <ol><!--  -->
+                <li> <!--Varje del i listan skrivs inom ett "listelement"<li>-->
                    <a href="brest.html"  target="_blank"><b>Brest</b> <i>region</i></a>
                 </li>
                 <li>
@@ -99,22 +130,22 @@
                 </li>
               </ol>
             </div><br>
-         <div class="image">
+         <div class="image"><!-- class för att styla alla bilder -->
            <img src="img/map.jpg">
          </div><br>
       </div>
-      <div class="footer">
+      <div class="footer"> <!--  -->
         <p>Made by Aleksandra Rusak @IAD22</p>
         <p><i>How to <del> survive</del> be a developer</i></p>
-        <p id="demo"></p>
+        <p id="demo"></p><!--  -->
 
-          <script src="date.js"></script>
+          <script src="date.js"></script> <!--  -->
 
       </div>
 
             <script src="scroll.js"></script>
-
             <script src="dark.js"></script>
+            <script src="img.js"></script>
 
   </body> 
 </html>
