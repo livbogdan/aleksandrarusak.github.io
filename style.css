@@ -90,7 +90,7 @@ body.night{
     padding-right: 10px;
 }
 
-  .container {
+.container {
     display: block;
     width: 80%;
     height: auto;
@@ -98,7 +98,7 @@ body.night{
     margin: 0 auto;
     background-color: white;
     text-align: center;
-  }
+}
 
   .container img{
     width: 60%;
